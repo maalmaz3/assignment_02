@@ -40,7 +40,7 @@ class TestAssignmentTwo_None(unittest.TestCase):
             y = 1
         self.assertEqual(1, y)
 
-        self.assertTrue(x == None)  # Not PEP8 compliant, but commonly used.
+        self.assertFalse(x == None)  # Not PEP8 compliant, but commonly used.
 
         """
         The take away here is that truthiness is not the same as None
