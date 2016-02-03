@@ -28,7 +28,7 @@ class TestAssignmentTwo_None(unittest.TestCase):
         checker = None
         if checker:
             x = 1
-        self.assertEqual(1,x)
+        self.assertEqual(0,x)
 
     def test_truthiness(self):
         """
@@ -38,7 +38,7 @@ class TestAssignmentTwo_None(unittest.TestCase):
         y = 0
         if not x:
             y = 1
-        self.assertEqual(0, y)
+        self.assertEqual(1, y)
 
         self.assertTrue(x == None)  # Not PEP8 compliant, but commonly used.
 
@@ -187,7 +187,7 @@ class TestAssignmentTwo_Strings(unittest.TestCase):
         or None usage that has not been demonstrated above.
         """
         name = 'Mohommad'
-        truth = (name.replace('ham','1234')=='Mo1234mad')
+        truth = (name.replace('hom','1234')=='Mo1234mad')
         self.assertTrue(truth)  # You can either fix this line or remove it once the test is in.
 
     def tearDown(self):
